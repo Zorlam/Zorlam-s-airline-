@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zorlam's Airline</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .feature-icon {
+            font-size: 50px;
+            color: #007bff;
+        }
+        .feature {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .destination-img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Zorlam's Airline</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#destinations">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#reservations">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#food">Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pickup">Pick-Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="jumbotron text-center">
+            <h1>Welcome to Zorlam's Airline</h1>
+            <p>Your comfort is our priority. Explore our services below.</p>
+        </div>
+
+        <div id="destinations" class="feature">
+            <i class="fas fa-map-marked-alt feature-icon"></i>
+            <h2>Destinations</h2>
+            <p>Explore our wide range of destinations across the globe.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x200" alt="Lagos" class="destination-img">
+                    <h3>Lagos</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x200" alt="Abuja" class="destination-img">
+                    <h3>Abuja</h3>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://via.placeholder.com/300x200" alt="Port Harcourt" class="destination-img">
+                    <h3>Port Harcourt</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="reservations" class="feature">
+            <i class="fas fa-ticket-alt feature-icon"></i>
+            <h2>Reservations</h2>
+            <p>Book your flights easily with our user-friendly reservation system.</p>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="from">From</label>
+                        <input type="text" class="form-control" id="from" placeholder="Enter departure city">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="to">To</label>
+                        <input type="text" class="form-control" id="to" placeholder="Enter destination city">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="departure">Departure Date</label>
+                        <input type="date" class="form-control" id="departure">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="return">Return Date</label>
+                        <input type="date" class="form-control" id="return">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Search Flights</button>
+            </form>
+        </div>
+
+        <div id="food" class="feature">
+            <i class="fas fa-utensils feature-icon"></i>
+            <h2>Food</h2>
+            <p>Enjoy a variety of delicious meals during your flight.</p>
+        </div>
+
+        <div id="pickup" class="feature">
+            <i class="fas fa-car feature-icon"></i>
+            <h2>Pick-Up</h2>
+            <p>Convenient pick-up services to get you to and from the airport.</p>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center py-4">
+        <p>&copy; 2024 Zorlam's Airline. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
