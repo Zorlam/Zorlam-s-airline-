@@ -1,0 +1,14 @@
+<style>
+    .feature-icon {
+        font-size: 50px;
+        color: #007bff;
+    }
+    .feature {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .destination-img {
+        width: 100%;
+        height: auto;
+    }
+</style>
